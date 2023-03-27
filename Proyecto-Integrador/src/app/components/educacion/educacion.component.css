@@ -5,7 +5,7 @@
 }
 .timeline{
     position: relative;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 100px auto;
 }
 .container{
@@ -149,3 +149,21 @@ p{
     }
 
 }
+hr{
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    max-width: 1200px;
+  }
+  p{
+    color: aliceblue;
+  }
+  h2{
+    color: aliceblue;
+  }
+  small{
+    color: rgb(43, 43, 43);
+  }
