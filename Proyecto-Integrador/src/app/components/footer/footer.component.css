@@ -1,0 +1,11 @@
+.container{
+    max-width: 1300px;
+    margin:0 auto;
+}
+footer{
+    margin: 0 auto;
+    background-color:rgb(230, 229, 229);
+}
+input{
+    max-width: 500px;
+}

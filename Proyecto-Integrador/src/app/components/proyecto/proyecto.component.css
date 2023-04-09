@@ -1,0 +1,100 @@
+.princi{
+    background-color: rgb(223, 83, 83);
+    scroll-margin-top: 95px;
+}
+.row{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1100px;
+    padding-bottom: 190px;
+}
+img{
+    width: 330px;
+    height: 275px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 9px;
+}
+div.col-sm-12 {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-right: 0 auto;
+}
+div.capa{
+    position: absolute;
+    text-align: center;
+    width: 330px;
+    height: 275px;
+    background: rgba(66, 0, 0, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    border-radius: 6px;
+}
+.capa:hover{
+    opacity: 1;
+}
+p{
+    color: azure;
+    padding-top: 40px;
+}
+h3{
+    color:azure;
+}
+h2{
+    text-align: center;
+    font-family:Playfair Display;
+    color: azure;
+    font-weight: 800;
+    margin-top: 50px;
+}
+svg{
+    color: azure;
+}
+button{
+    margin: 10px;
+    color: azure;
+}
+  @media screen and (max-width: 900px){
+    .img-content{
+        padding-top: 80px;
+        background-color: rgba(56, 56, 56, 0.5);
+        padding-bottom: 150px;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .capa:hover{
+        opacity: 1;
+    }
+    div.capa{
+        position: absolute;
+        text-align: center;
+        width: 330px;
+        height: 275px;
+        opacity: 1;
+        border-radius: 6px;
+        background-color: rgba(56, 56, 56, 0);
+    }
+    h3{
+        margin-top: 20px;
+
+    }
+    p{
+       margin-top: 280px;
+    }
+    button{
+        margin-top: -4px;
+        color: azure;
+    }
+  }
+  .divider::after{
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 6px;
+    background-color:dimgray;
+    margin: 0 auto;
+    border-radius: 6px;
+    max-width: 1300px;
+}

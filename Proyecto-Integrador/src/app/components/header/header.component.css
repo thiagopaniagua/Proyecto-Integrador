@@ -1,42 +1,73 @@
-
 .header-nav{
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
     width: 100%;
-    margin: 0 auto;
+    top: 0;
+    right: 0;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 img{
-    width: 200px;
-    margin-top: -10px;
+    width: 170px;
 }
-.header-contact{
+.nav-bar ul{
     display: flex;
-    margin-top: 30px;
-}
-ul{
     list-style: none;
+    margin-top: 20px;
+}
+.nav-bar a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0px 25px;
+    text-decoration: none;
+    color: dimgray;
+}
+.nav-bar a:hover{
+    color: rgb(240, 117, 117);
+    transition: 0.5s;
+}
+.nav-bar a.active{
+    color:rgb(240, 117, 117) ;
+}
+.nav-contact{
     display: flex;
-    margin-top: 5px;
-    text-decoration: none;
 }
-li{
+.nav-contact ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 20px;
+}
+.nav-contact a{
+    padding: 10px;
+    color: dimgray;
+}
+.nav-contact a:hover{
+    color: rgb(240, 117, 117);
+    transition: 0.5s;
+}
+button{
+    height: 2.5em;
+    margin-top: 10px;
+    margin-left: 10px;
     margin-right: 10px;
-    text-decoration: none;
-}
-a{
-    text-decoration: none;
-    color: darkgray;
-    transition: all 300ms ease;
-}
-a:hover{
-    color: rgb(112, 112, 112);
 }
 
-button{
-    height: 40px;
-    margin-right: 20px;
-    transition: all 500ms ease;
-}
-.menu-responsive{
-    display: none;
+@media screen and (max-width: 1120px){
+    .nav-bar a{
+        font-size: 1rem;
+    }
+    img{
+        width: 130px;
+    }
+    svg{
+        width: 18px;
+    }
 }

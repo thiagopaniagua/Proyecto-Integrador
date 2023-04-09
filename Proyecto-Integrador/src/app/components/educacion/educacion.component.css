@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.row{
+    background-color: whitesmoke;
+    opacity: 0.99;
+    padding-top: 50px;
+}
 .timeline{
     position: relative;
     max-width: 1300px;
@@ -26,10 +31,11 @@
 }
 .text-box{
     padding: 20px 30px;
-    background:cadetblue;
+    background:rgb(151, 151, 151);
     position: relative;
     border-radius: 6px;
     font-size: 15px;
+    box-shadow:10px 10px 15px rgba(104, 104, 104, 0.3);
 }
 .left-container{
     left: 0;
@@ -43,7 +49,6 @@
     border-radius: 50%;
     right: -20px;
     top: 32px;
-    z-index: 10;
 }
 @keyframes movedown {
     0%{
@@ -63,7 +68,7 @@
     position: absolute;
     width: 6px;
     height: 100%;
-    background: cadetblue;
+    background-color:rgb(151, 151, 151);
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -93,7 +98,7 @@
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-left: 15px solid cadetblue;
+    border-left: 15px solid rgb(151, 151, 151);
     right: -15px;
 }
 .right-container-arrow{
@@ -104,12 +109,12 @@
     z-index: 1;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid cadetblue;
-    left: -15px;
+    border-right: 15px solid rgb(151, 151, 151);
+    left: -14px;
 }
 .titule{
     font-family: Playfair Display;
-    color: dimgray;
+    color: rgb(240, 117, 117);
     font-weight:800;
     text-align: center;
     margin-top: 100px;
@@ -143,21 +148,24 @@ p{
         left: 10px;
     }
     .left-container-arrow, .right-container-arrow{
-        border-right: 15px solid cadetblue;
-        left: -15px;
+        border-right: 15px solid rgb(151, 151, 151);
+        left: -14px;
         border-left: 0;
     }
 
 }
-hr{
-    border: 3px solid black;
-    border-radius: 20px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
+.divider::after{
+    content: '';
+    display: flex;
+    width: 100%;
     max-width: 1200px;
-  }
+    height: 6px;
+    background-color:dimgray;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-top: 100px;
+    margin-bottom: -3px;
+}
   p{
     color: aliceblue;
   }
@@ -165,5 +173,5 @@ hr{
     color: aliceblue;
   }
   small{
-    color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
   }
