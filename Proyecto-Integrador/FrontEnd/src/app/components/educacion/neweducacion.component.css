@@ -1,0 +1,13 @@
+.card{
+    background: linear-gradient(135deg, rgba(248, 245, 245, 0.9), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(131, 131, 131, 0.18);
+    
+}
+section{
+    background-image: url(../../../assets/fondo-login.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

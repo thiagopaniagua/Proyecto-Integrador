@@ -1,0 +1,33 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <h3 class="mb-5">Nueva Skill</h3>
+  <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+              <div class="form-outline mb-4">
+                <input type="text" id="nombre" name="nombre" class="form-control form-control-lg" [(ngModel)]="nombre" required/>
+                <label class="form-label" for="nombre">Nombre Skill</label>
+              </div>
+  
+              <div class="form-outline mb-4">
+                <input type="text" id="porcentaje" name="porcentaje" class="form-control form-control-lg" [(ngModel)]="porcentaje" required/>
+                <label class="form-label" for="porcentaje">porcentaje</label>
+              </div>
+  
+              
+  
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Aceptar</button>
+  </form>
+              <hr class="my-4">
+  
+              <p>Thank you</p>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

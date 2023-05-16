@@ -1,0 +1,11 @@
+*{
+    scroll-behavior: smooth;
+}
+app-acercademi{
+    margin: 0 auto;
+    opacity: 1;
+    z-index: 0;
+}
+app-proyecto{
+    background-color: rgb(240, 117, 117);
+}

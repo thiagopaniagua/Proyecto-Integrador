@@ -1,140 +1,45 @@
 <div class="row" id="skills">
     <h2>Skills</h2>
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <h4>Front End</h4>
-        <div>
-            <p>HTML</p>
-           <div class="logo-bar-progress"> 
-            <img src="../../../assets/html.svg">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 80%">80%</div>
-             </div>
-            </div>
+    <div class="col-lg-2">
+            <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged"> Nueva Skill</button>
         </div>
-        <div>
-            <p>CSS</p>
-           <div class="logo-bar-progress"> 
-            <img class="css-logo" src="../../../assets/css.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 88%">88%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>React JS</p>
-           <div class="logo-bar-progress"> 
-            <img src="../../../assets/react.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 60%">60%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Angular</p>
-           <div class="logo-bar-progress"> 
-            <img src="../../../assets/angular.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 70%">70%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>JavaScript</p>
-           <div class="logo-bar-progress"> 
-            <img class="javascript-logo" src="../../../assets/javascript.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 65%">65%</div>
-             </div>
-            </div>
-        </div>
+    <div  *ngFor="let skill of skill">
+        
+        <circle-progress
+  [percent]="(skill.porcentaje)"
+  [radius]="90"
+  [title]="(skill.nombre)"
+  [titleColor]="'#212F3c'"
+  [showImage]="false"
+  [showTitle]="true"
+  [imageHeight]="70"
+  [imageWidth]="70"
+  [showUnits]="false"
+  [showSubtitle]="false"
+  [outerStrokeWidth]="16"
+  [innerStrokeWidth]="2"
+  [outerStrokeColor]="'#78C000'"
+  [innerStrokeColor]="'#C7E596'"
+  [animation]="true"
+  [animationDuration]="600">
+a</circle-progress>
+
+<div *ngIf="isLogged">
+    <button type="button" class="edit" routerLink="/editskill/{{skill.id}}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+            <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"></path>
+        </svg>
+    </button>
+    <button type="button" class="delete" (click)="delete(skill.id)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+        </svg>
+    </button>
+
+</div>
     </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <h4>Back End</h4>
-        <div>
-            <p>MySQL</p>
-           <div class="logo-bar-progress"> 
-            <img src="../../../assets/mysql.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 65%">65%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Node JS</p>
-           <div class="logo-bar-progress"> 
-            <img  src="../../../assets/nodejs.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 75%">75%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Java</p>
-           <div class="logo-bar-progress"> 
-            <img src="../../../assets/java.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 70%">70%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Php</p>
-           <div class="logo-bar-progress"> 
-            <img src="../../../assets/php.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 60%">60%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Ruby</p>
-           <div class="logo-bar-progress"> 
-            <img class="ruby-image" src="../../../assets/ruby.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 60%">60%</div>
-             </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-        <h4>Otros</h4>
-        <div>
-            <p>Trabajo en equipo</p>
-           <div class="logo-bar-progress"> 
-            <img class="equipo-image" src="../../../assets/trabajoenequipo.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 80%">80%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Comunicación</p>
-           <div class="logo-bar-progress"> 
-            <img class="css-logo" src="../../../assets/comunicacion.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 70%">70%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Creatividad</p>
-           <div class="logo-bar-progress"> 
-            <img class="creatividad-image" src="../../../assets/creatividad.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 80%">80%</div>
-             </div>
-            </div>
-        </div>
-        <div>
-            <p>Adaptabilidad</p>
-           <div class="logo-bar-progress"> 
-            <img src="../../../assets/adaptabilidad.png">
-            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                  <div class="progress-bar" style="width: 90%">90%</div>
-             </div>
-            </div>
-        </div>
-    </div>  
-    <div class="divider">
-      </div>
+    
+    
+
+   
 </div>

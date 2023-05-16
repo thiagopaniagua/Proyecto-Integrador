@@ -1,21 +1,33 @@
 .header-nav{
+     position: fixed;
+     width: 100%;
+     top: 0;
+     right: 0;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    
+}
+.navbar-expand-lg{
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
-    height: 100px;
+    border-bottom: 2px black;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all .50s ease;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(248, 245, 245, 0.9), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    
 }
 img{
-    width: 170px;
+    width: 130px;
 }
 .nav-bar ul{
     display: flex;
@@ -43,7 +55,9 @@ img{
     display: flex;
     list-style: none;
     align-items: center;
-    margin-top: 20px;
+    margin-left: -38px;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 .nav-contact a{
     padding: 10px;
@@ -53,21 +67,6 @@ img{
     color: rgb(240, 117, 117);
     transition: 0.5s;
 }
-button{
-    height: 2.5em;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
-@media screen and (max-width: 1120px){
-    .nav-bar a{
-        font-size: 1rem;
-    }
-    img{
-        width: 130px;
-    }
-    svg{
-        width: 18px;
-    }
-}
+
+
