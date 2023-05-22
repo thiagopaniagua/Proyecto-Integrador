@@ -1,0 +1,14 @@
+section{
+    background-image: url(../../../assets/fondoedit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    background: linear-gradient(135deg, rgba(214, 214, 214, 0.5), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
