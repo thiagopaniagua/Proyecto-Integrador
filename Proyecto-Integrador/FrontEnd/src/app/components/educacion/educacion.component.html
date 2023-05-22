@@ -4,14 +4,14 @@
         <button type="button" routerLink="/nuevaedu" class="btn btn-dark" *ngIf="isLogged">Agregar Educación</button>
    </div> 
     <div class="timeline">
-        <div *ngFor="let Educacion of educacion" class="container left-container">
+        <div *ngFor="let Educacion of educacion" class="container right-container">
             <img src="../../../assets/ar-prog_loaago.png">
             <div class="text-box">
                 <h2>{{Educacion.nombreE}}</h2>
                 <p>
                    {{Educacion.descripcionE}}
                 </p>
-                <span class="left-container-arrow"></span>
+                <span class="right-container-arrow"></span>
                 <div *ngIf="isLogged">
                     <button type="button" class="edit" routerLink="/editedu/{{Educacion.id}}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">

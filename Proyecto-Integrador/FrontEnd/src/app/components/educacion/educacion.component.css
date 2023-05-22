@@ -7,11 +7,14 @@
     background-color: whitesmoke;
     opacity: 0.99;
     padding-top: 50px;
+    padding-bottom: 100px;
 }
 .timeline{
     position: relative;
     max-width: 1200px;
-    margin: 100px auto;
+    margin-right: auto;
+    margin-top: 70px;
+
 }
 
 .container{
@@ -124,7 +127,8 @@ p{
     font-family: Roboto Condensed;
     font-size: 15px;
 }
-@media screen and (max-width:650px){
+
+@media screen and (max-width:2000px){
     .timeline{
         margin: 50px auto;
     }
