@@ -1,6 +1,8 @@
 <div class="row" id="educación">
     <h2 class="titule">Educación</h2>
-    <button type="button" routerLink="/nuevaedu" class="btn btn-dark" *ngIf="isLogged">Agregar Educación</button>
+   <div class="col-12 text-center">
+        <button type="button" routerLink="/nuevaedu" class="btn btn-dark" *ngIf="isLogged">Agregar Educación</button>
+   </div> 
     <div class="timeline">
         <div *ngFor="let Educacion of educacion" class="container left-container">
             <img src="../../../assets/ar-prog_loaago.png">

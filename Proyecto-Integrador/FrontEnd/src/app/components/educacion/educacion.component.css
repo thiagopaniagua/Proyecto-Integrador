@@ -10,7 +10,7 @@
 }
 .timeline{
     position: relative;
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 100px auto;
 }
 
@@ -193,4 +193,7 @@ p{
     border: solid rgb(240, 117, 117);
     box-shadow: 9px 11px 15px rgba(233, 67, 67, 0.3);
   }
+.btn-dark{
+    margin-top: 10px;
+}
   
