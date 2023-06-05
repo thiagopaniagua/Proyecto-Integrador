@@ -1,12 +1,11 @@
-.card{
-    background: linear-gradient(135deg, rgba(248, 245, 245, 0.9), rgba(255, 255, 255, 0));
+.card-body{
+    background: linear-gradient(135deg, rgba(214, 214, 214, 0.5), rgba(255, 255, 255, 0));
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(131, 131, 131, 0.18);
-    
+    border-radius: 10px;
 }
 section{
-    background-image: url(../../../assets/fondo-login.jpg);
+    background-image: url(../../../assets/fondoedit.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

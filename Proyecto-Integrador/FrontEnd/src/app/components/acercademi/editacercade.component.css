@@ -6,7 +6,7 @@ section{
     width: 100%;
     height: 100%;
 }
-.card-body{
+.container{
     background: linear-gradient(135deg, rgba(214, 214, 214, 0.5), rgba(255, 255, 255, 0));
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(10px);

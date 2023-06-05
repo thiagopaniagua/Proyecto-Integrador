@@ -1,14 +1,16 @@
 <div class="row" id="acercademi">
     <h2>Acerca de mi</h2>
+    <div class="col-12 text-center">
+        <button type="button" routerLink="/editacercade/1" class="btn btn-dark" *ngIf="isLogged"><p>Editar persona</p></button>
+   </div> 
     <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
-        <p class="name" id="nombre">Thiago Paniagua</p>
-        <img src="../../../assets/Wha_at_5.27.14_PM-removebg-preview.png" alt="">
+        <p class="name" id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+        <img src={{persona.img}} alt="">
         <p>Desarrollador Full stack JR</p>
     </div>
     <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7">
         <h3>Mi introducción</h3>
-        <p>"¡Hola a todos! Mi nombre es Thiago, Soy apasionado por la programación y estoy emocionado de embarcarme en esta carrera profesional. Aunque soy un programador junior, estoy motivado y dispuesto a aprender y crecer en esta industria en constante evolución. Me considero una persona creativa, analítica y con habilidades de resolución de problemas. Además, disfruto trabajando en equipo y colaborando con otros desarrolladores para alcanzar nuestros objetivos.   
-        </p>
+        <p>{{persona.descripcion}} </p>
         <button>
            <p>Descargar CV 
            </p> 
