@@ -8,7 +8,7 @@ import { enviroment } from 'src/environments/enviroment';
   providedIn: 'root'
 })
 export class EducacionService {
-  URL = 'Http://localhost:8080/educacion/';
+  URL = 'https://mi-portfoliotp.onrender.com/educacion/';
 
   constructor(private httpClient: HttpClient) {}
 
